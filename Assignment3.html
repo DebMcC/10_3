@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html ng-app="app1">
+<head>
+    <title>Controller With Scope</title>
+	<meta charset="utf-8" />
+    <script src="angular.js"></script>
+    <script>
+        var app1 = angular.module('app1',[]);
+        app1.controller('ctr1', function($scope){
+            $scope.message = "Hello World";
+        });
+    </script>
+</head>
+<body ng-controller="ctr1 ">
+    <div>{{message}}</div>
+
+</body>
+</html>
